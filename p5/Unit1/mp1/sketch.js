@@ -1,12 +1,14 @@
 var f;
 var f2;
 var f3;
+var f4;
 
 function setup() {
   createCanvas(1600, 1600);
   f = loadFont("assets/Cinzel.ttf");
   f2 = loadFont("Assets/cinzel.ttf");
   f3 = loadFont("Assets/cinzel.ttf");
+  f4 = loadFont("Assets/cinzel.ttf");
   textAlign(LEFT);
 }
 
@@ -25,6 +27,9 @@ function draw() {
   textSize(15);
   text("When she sees humans hunting endangered sea creatures or dumping trash, she throws her spear at them, and her spear never misses.", 40, 50 + 40);
 
+  textFont(f4);
+  textSize(10);
+  text("Time it took to create this, 10 hours.");
   fill(27, 50, 250);
   noStroke();
   rect(1, 1500, 1600, 600);
