@@ -3,7 +3,7 @@ var f2;
 
 function setup() {
   createCanvas(1600, 1600);
-  f = loadFont("Assets/AlfaSlabOne-Regular.ttf");
+  f = loadFont("assets/AlfaSlabOne-Regular.ttf");
     f2 = loadFont("Assets/cinzel.ttf");
   textAlign(CENTER);
 }
