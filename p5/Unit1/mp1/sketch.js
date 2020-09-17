@@ -6,9 +6,9 @@ var f4;
 function setup() {
   createCanvas(1600, 1600);
   f = loadFont("assets/Cinzel.ttf");
-  f2 = loadFont("Assets/cinzel.ttf");
-  f3 = loadFont("Assets/cinzel.ttf");
-  f4 = loadFont("Assets/cinzel.ttf");
+  f2 = loadFont("assets/Cinzel.ttf");
+  f3 = loadFont("assets/Cinzel.ttf");
+  f4 = loadFont("assets/Cinzel.ttf");
   textAlign(LEFT);
 }
 
@@ -102,5 +102,5 @@ ellipse(670, 640, 10, 10);
 
 
 
-text(mouseX + ', ' + mouseY, 10, 10);
+//text(mouseX + ', ' + mouseY, 10, 10);
 }

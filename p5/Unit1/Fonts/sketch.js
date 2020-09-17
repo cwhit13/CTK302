@@ -15,5 +15,5 @@ function draw() {
   text("Hello Darkness My Old Friend", width / 2, height / 2);
   textFont(f2);
   textSize(100);
-  text("I've come to talk to you", width / 2, height / 2 +80);
+  text("I've come to talk to you again", width / 2, height / 2 +80);
 }
