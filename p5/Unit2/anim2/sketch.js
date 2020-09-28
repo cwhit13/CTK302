@@ -10,7 +10,7 @@ function draw() {
 
   push();
   translate(x, 0);
-  rect(0, 250, 50, 50);
+  //text ("This is Halloween", x, 250);
   x = x + 5;
   if (x > width) {
     x = 0;

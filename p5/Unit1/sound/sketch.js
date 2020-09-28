@@ -1,7 +1,7 @@
 var song1;
 
 function preload() {
-  song1 = loadSound("assets/aprilshowers.mp3");
+  song1 = loadSound("assets/skate.mp3");
 }
 
 function setup() {
@@ -24,4 +24,8 @@ function mouseReleased() {
   } else {
     song1.loop();
   }
+}
+
+function touchStarted() {
+  getAudioContext().resume();
 }
