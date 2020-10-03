@@ -16,7 +16,7 @@ function draw() {
     timer= timer + 1
     if (timer >200){
       state = 1;
-      timer = 0; 
+      timer = 0;
     }
       break;
     case 1:
