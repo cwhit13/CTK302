@@ -29,7 +29,7 @@ function draw() {
       text("1", 100, 100);
       song1.play();
       state = 1;
-      break;  
+      break;
 
     case 1:
       text("listen to song 1", 100, 100);
@@ -67,4 +67,7 @@ function mouseReleased() {
   song2.pause();
   song3.pause();
 
+}
+function touchStarted() {
+  getAudioContext().resume();
 }
