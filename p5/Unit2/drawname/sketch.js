@@ -4,5 +4,9 @@ function setup() {
 
 function draw() {
   background (220);
+  text("Chloe", mouseX, mouseY);
 
+}
+function mouseReleased(){
+  clear();
 }
