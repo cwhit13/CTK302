@@ -37,8 +37,6 @@ function preload() {
     // extra stuff for debugging
     textSize(18);
     text("Click the screen first to give\npermission for mic input.\nMy volume is " + vol, 10, 60);
-
-
   }
 
 
@@ -62,7 +60,6 @@ function preload() {
       state = 1;
       break;
   }
-
   function touchStarted() {
     getAudioContext().resume();
   }
@@ -72,6 +69,6 @@ function preload() {
     if (state > 2) state = 0;
     song1.pause();
   }
-}
+
 
 // Code Freeze was originally 10/4 at 9pm. but you know how it be. Rex Morgan is the actor who plays Henry Higgins in My Fair Lady. What is his coorelation to a hippo? That is for the viewer to decide.
