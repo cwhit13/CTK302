@@ -12,11 +12,12 @@ function preload() {
 
   function setup() {
     createCanvas(windowWidth, windowHeight);
+    mic = new p5.AudioIn();
+    mic.start();
     song1 = loadSound("assets/carl.")
     img1 = loadImage("assets/img1.png")
     imageMode(CENTER);
-    mic = new p5.AudioIn();
-    mic.start();
+
   }
 
   function draw() {
