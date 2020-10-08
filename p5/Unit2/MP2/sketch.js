@@ -60,6 +60,7 @@ function preload() {
       state = 1;
       break;
   }
+}
   function touchStarted() {
     getAudioContext().resume();
   }
