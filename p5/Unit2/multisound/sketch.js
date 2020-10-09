@@ -68,6 +68,7 @@ function mouseReleased() {
   song3.pause();
 
 }
+
 function touchStarted() {
   getAudioContext().resume();
 }
