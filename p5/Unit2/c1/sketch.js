@@ -6,6 +6,7 @@ var c = rect
 
 function setup() {
   createCanvas(500, 500);
+    rect(200, 200, 50, 20);
   rectMode(CENTER);
   mic = new p5.AudioIn();
   mic.start();
@@ -16,9 +17,8 @@ function draw() {
   rect(200, 200, 50, 20);
   fill('purple');
   x = x + velocity;
-  if (x > width) {
+  if (x > width)
     x = 0;
-
     vol = (mic.getLevel()).toFixed(2);
 
     if (vol > .5) {}
@@ -39,6 +39,8 @@ function draw() {
           }
         }
     }
+  }
+
     if (w > width) x = 0;
 
     timer = timer + 1;

@@ -9,24 +9,30 @@ function setup() {
 }
 
 function draw() {
+  //background (100);
   vol = (mic.getLevel()).toFixed(3);
 
   switch (state) {
 
-    case 0:
+    case 0: 
+      background('blue');
+      text("sshhhh", 300, 300);
       if (vol > .10) {
-        background('blue');
-        text("sshhhh", 250, 250);
-        break;
-      }
-      case 1:
-        print("whatev");
-        if (vol > .30) {
-          background('purple');
-          text("Will you shut up man", 250, 250);
-          break;
+        state = 1
+    }
+     break;
 
-        }
+    case 1:
+      print("death to capitalism");
+        background('purple');
+      text("Will you shut up man", 300, 300);
+      break;
+    }
+    textSize(18);
+    text("Click the screen first to give\npermission for mic input.\nMy volume is " + vol, 10, 60);
+  }
+  function touchStarted() {
+    getAudioContext().resume();
   }
 
   function mouseReleased() {
@@ -34,8 +40,4 @@ function draw() {
     if (state > 2) {
       state = 0;
     }
-  }
-
-  function touchStarted() {
-    getAudioContext().resume();
   }
