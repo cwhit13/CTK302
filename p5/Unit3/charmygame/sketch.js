@@ -1,5 +1,5 @@
 let cars = []
-let f2;
+let f1;
 let bg;
 let fonts = [];
 let maxCars = 5;
@@ -17,13 +17,13 @@ function setup() {
 
 
 
-  f2 = loadFont("assets/doublefeature.ttf");
+  f1 = loadFont("assets/doublefeature.ttf");
 
 
   bg = loadImage("assets/background.png");
   charmy = loadImage("assets/charmy.png")
   candy = loadImage("assets/candy.png")
-  fonts = [f2];
+  fonts = [f1];
 
   //spawn objects
   for (let i = 0; i < maxCars; i++) {
@@ -79,7 +79,7 @@ function game() {
   //yo draw the frog
   //fill("green");
   //ellipse(frogPos.x, frogPos.y, 50, 50);
-  image(charmy, charmy.Pos.x, charmy.Pos.y);
+  image (charmy, charmyPos.x, charmyPos.y);
   checkForKeys();
 }
 
