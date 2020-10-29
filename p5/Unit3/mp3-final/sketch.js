@@ -1,11 +1,13 @@
 let cars = []
-let f1, f2;
+let f2;
 let bg;
 let fonts = [];
 let maxCars = 5;
 let frogPos;
 let state = 0;
 let timer = 0;
+let charmy ;
+let candy;
 
 function setup() {
   createCanvas(600, 600);
@@ -13,13 +15,15 @@ function setup() {
   textAlign(CENTER);
   rectMode(CENTER);
 
-  f1 = loadFont("assets/friday13.ttf");
+
+
   f2 = loadFont("assets/doublefeature.ttf");
-  //f3 = loadFont("assets/anotherdanger.otf");
 
-  bg = loadImage("assets/fall.jpg");
 
-  fonts = [f1, f2];
+  bg = loadImage("assets/background.png");
+charmy = loadImage("assets/charmy.png")
+candy = loadImage("assets/candy.png")
+  fonts = [f2];
 
   //spawn objects
   for (let i = 0; i < maxCars; i++) {
@@ -31,7 +35,9 @@ function draw() {
   switch (state) {
     case 0:
       background('blue');
-      text("welcome to my game!", width/2, height/2);
+      fill("white");
+      textSize(20);
+      text("Welcome to my game! Help Charmy grab all her candy in time", width/2, height/2);
       break;
 
     case 1:
@@ -71,8 +77,9 @@ function game() {
   }
 
   //yo draw the frog
-  fill("green");
-  ellipse(frogPos.x, frogPos.y, 50, 50);
+  //fill("green");
+  //ellipse(frogPos.x, frogPos.y, 50, 50);
+  image(charmy, frogPos.x, frogPos.y );
   checkForKeys();
 }
 
@@ -131,11 +138,11 @@ class Car {
 
   display() {
     //rect(this.pos.x, this.pos.y, 50, 25);
-    fill(this.c);
-    textFont(this.font);
-    textSize(this.size);
-    text("ACAB", this.pos.x, this.pos.y);
-    //image(name, this.pos.x, this.pos.y) where you would put little items instead of text
+    //fill(this.c);
+    //textFont(this.font);
+    //textSize(this.size);
+    //text("ACAB", this.pos.x, this.pos.y);
+    image(candy, this.pos.x, this.pos.y); //where you would put little items instead of text
   }
 
   move() {
