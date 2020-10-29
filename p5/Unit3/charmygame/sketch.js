@@ -6,7 +6,7 @@ let maxCars = 5;
 let frogPos;
 let state = 0;
 let timer = 0;
-let charmy ;
+let charmy;
 let candy;
 
 function setup() {
@@ -21,8 +21,8 @@ function setup() {
 
 
   bg = loadImage("assets/background.png");
-charmy = loadImage("assets/charmy.png")
-candy = loadImage("assets/candy.png")
+  charmy = loadImage("assets/charmy.png")
+  candy = loadImage("assets/candy.png")
   fonts = [f2];
 
   //spawn objects
@@ -37,7 +37,7 @@ function draw() {
       background('blue');
       fill("white");
       textSize(20);
-      text("Welcome to my game! Help Charmy grab all her candy in time", width/2, height/2);
+      text("Welcome to my game! Help Charmy grab all her candy in time", width / 2, height / 2);
       break;
 
     case 1:
@@ -50,12 +50,12 @@ function draw() {
 
     case 2:
       background('red');
-      text("Frabjous! You won!", width/2, height/2);
+      text("Frabjous! You won!", width / 2, height / 2);
       break;
 
     case 3:
       background('purple');
-      text("Big Shame, you lost!", width/2, height/2);
+      text("Big Shame, you lost!", width / 2, height / 2);
       break;
 
   }
@@ -79,7 +79,7 @@ function game() {
   //yo draw the frog
   //fill("green");
   //ellipse(frogPos.x, frogPos.y, 50, 50);
-  image(charmy, frogPos.x, frogPos.y );
+  image(charmy, charmy.Pos.x, charmy.Pos.y);
   checkForKeys();
 }
 
