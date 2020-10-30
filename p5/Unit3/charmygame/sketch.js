@@ -3,7 +3,7 @@ let f1;
 let bg;
 let fonts = [];
 let maxCars = 5;
-let frogPos;
+//let frogPos;
 let state = 0;
 let timer = 0;
 let charmy;
@@ -12,7 +12,7 @@ let charmyPos;
 
 function setup() {
   createCanvas(600, 600);
-  frogPos = createVector(width / 2, height - 80);
+  charmyPos = createVector(width / 2, height - 80);
   textAlign(CENTER);
   rectMode(CENTER);
 
