@@ -8,6 +8,7 @@ let state = 0;
 let timer = 0;
 let charmy;
 let candy;
+let charmyPos;
 
 function setup() {
   createCanvas(600, 600);
@@ -17,13 +18,16 @@ function setup() {
 
 
 
+
   f1 = loadFont("assets/doublefeature.ttf");
+textFont (f1, 24);
 
 
   bg = loadImage("assets/background.png");
   charmy = loadImage("assets/charmy.png")
   candy = loadImage("assets/candy.png")
-  fonts = [f1];
+  charmyPos = createVector (width/2, height-80);
+  //fonts = [f1];
 
   //spawn objects
   for (let i = 0; i < maxCars; i++) {
@@ -37,7 +41,7 @@ function draw() {
       background('blue');
       fill("white");
       textSize(20);
-      text("Welcome to my game! Help Charmy grab all her candy in time", width / 2, height / 2);
+      text("Welcome to my game! \n Help Charmy grab all her candy in time", width / 2, height / 2);
       break;
 
     case 1:
@@ -67,7 +71,7 @@ function game() {
   for (let i = 0; i < cars.length; i++) {
     cars[i].display();
     cars[i].move();
-    if (cars[i].pos.dist(frogPos) < 50) {
+    if (cars[i].pos.dist(charmyPos) < 50) {
       cars.splice(i, 1);
     }
   }
@@ -79,7 +83,7 @@ function game() {
   //yo draw the frog
   //fill("green");
   //ellipse(frogPos.x, frogPos.y, 50, 50);
-  image (charmy, charmyPos.x, charmyPos.y);
+  image (charmy, charmyPos.x, charmyPos.y, 100, 300);
   checkForKeys();
 }
 
@@ -93,10 +97,10 @@ function resetTheGame() {
 }
 
 function checkForKeys() {
-  if (keyIsDown(LEFT_ARROW)) frogPos.x -= 5;
-  if (keyIsDown(RIGHT_ARROW)) frogPos.x += 5;
-  if (keyIsDown(UP_ARROW)) frogPos.y -= 5;
-  if (keyIsDown(DOWN_ARROW)) frogPos.y += 5;
+  if (keyIsDown(LEFT_ARROW)) charmyPos.x -= 5;
+  if (keyIsDown(RIGHT_ARROW)) charmyPos.x += 5;
+  if (keyIsDown(UP_ARROW)) charmyPos.y -= 5;
+  if (keyIsDown(DOWN_ARROW)) charmyPos.y += 5;
 }
 
 function mouseReleased() {
