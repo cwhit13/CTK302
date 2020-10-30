@@ -12,7 +12,7 @@ let charmyPos;
 
 function setup() {
   createCanvas(600, 600);
-  charmyPos = createVector(width / 2, height - 80);
+  //charmyPos = createVector(width / 2, height - 80);
   textAlign(CENTER);
   rectMode(CENTER);
 
