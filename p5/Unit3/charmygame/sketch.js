@@ -40,7 +40,7 @@ function draw() {
     case 0:
       background('blue');
       fill("white");
-      textSize(20);
+      textSize(24);
       text("Welcome to my game! \n Help Charmy grab all her candy in time", width / 2, height / 2);
       break;
 
