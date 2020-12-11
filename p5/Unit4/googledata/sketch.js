@@ -1,5 +1,5 @@
 var bubbles = [];
-let bg;
+var bg;
 var f;
 function setup() {
   //f = loadFont ("assets/font.ttf");
@@ -25,6 +25,7 @@ function setup() {
   rectMode(CENTER);
   imageMode(CENTER);
 bg = loadImage("assets/rap.jpg");
+f = loadFont("assets/font.ttf");
 }
 
 // The data comes back as an array of objects
