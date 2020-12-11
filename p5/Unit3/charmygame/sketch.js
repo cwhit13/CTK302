@@ -24,8 +24,8 @@ textFont (f1, 24);
 
 
   bg = loadImage("assets/background.png");
-  charmy = loadImage("assets/charmy.png")
-  candy = loadImage("assets/candy.png")
+  charmy = loadImage("assets/charmy.png");
+  candy = loadImage("assets/candy.png");
   charmyPos = createVector (width/2, height-80);
   //fonts = [f1];
 
