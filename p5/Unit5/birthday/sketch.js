@@ -1,12 +1,12 @@
-var f;
+//var f;
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  f = loadFont ("assets/font.ttf");
+//  f = loadFont ("assets/font.ttf");
   textAlign (LEFT);
 }
 
 function draw() {
-  textFont(f);
+  //textFont(f);
   textSize(40);
   text("Yo, this is the top song for \n the day of August 25, 1997", 50, 100);
   textSize(20);
