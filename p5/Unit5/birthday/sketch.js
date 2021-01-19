@@ -1,7 +1,7 @@
 var f;
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  f = loadFont ("assets/font2.otf");
+  f = loadFont ("assets/font.otf");
   textAlign (LEFT);
 }
 
