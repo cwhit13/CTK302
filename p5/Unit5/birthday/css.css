@@ -1,0 +1,41 @@
+body {
+  background-color: hotpink;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+
+
+}
+
+h1 {
+  background-color: limegreen;
+  color: black;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  border: 20px solid powderblue;
+  padding: 30px;
+}
+h2 {
+  color: black;
+  text-align: left;
+font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+h3 {
+  color: black;
+  text-align: left;
+font-family: 'Lato', sans-serif;
+  font-style: ;
+  font-size: 20px;
+}
+h4 {
+  color: black;
+  text-align: left;
+font-family: 'Lato', sans-serif;
+  font-style: ;
+  font-size: 15px;
+}
