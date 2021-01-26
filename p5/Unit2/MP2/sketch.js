@@ -43,7 +43,7 @@ function draw() {
 
     case 0:
       background('purple')
-      textSize(10);
+      textSize(70);
       fill("white");
       text("Greetings and Salutations \nPlease click on screen to begin.", 100, 300);
       break;
