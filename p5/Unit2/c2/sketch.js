@@ -14,7 +14,7 @@ function draw() {
 
   switch (state) {
 
-    case 0: 
+    case 0:
       background('blue');
       text("sshhhh", 300, 300);
       if (vol > .10) {
@@ -25,7 +25,7 @@ function draw() {
     case 1:
       print("death to capitalism");
         background('purple');
-      text("Will you shut up man", 300, 300);
+      text("You are too loud!", 300, 300);
       break;
     }
     textSize(18);
